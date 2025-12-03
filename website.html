@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda Xhafaj | Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            margin: 0 auto 20px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #667eea;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .contact {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact a {
+            text-decoration: none;
+            color: white;
+            background: #667eea;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: transform 0.3s;
+        }
+        
+        .contact a:hover {
+            transform: translateY(-3px);
+            background: #5a67d8;
+        }
+        
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 15px 0;
+        }
+        
+        .tech-tag {
+            background: #e0e7ff;
+            color: #667eea;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* Skills Section */
+        .skills {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: white;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-img">👩‍💻</div>
+            <h1 class="name">Amanda Xhafaj</h1>
+            <p class="title">Computer Engineering Student & Software Developer</p>
+            <p>Passionate about robotics ,software development, and the cloud. Seeking internship opportunities to apply my skills.</p>
+            
+            <div class="contact">
+                <a href="mailto:axhafaj23@posta.pau.edu.tr">📧 Email</a>
+                <a href="https://github.com/Amsishere" target="_blank">💻 GitHub</a>
+                <a href="https://www.linkedin.com/in/amanda-xhafaj-8135b6211/" target="_blank">💼 LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Projects Section -->
+        <section class="Projects">
+            <!-- Project 1:  Scientific Calculator -->
+            <div class="project-card">
+                <h2 class="project-title">🔬 Scientific Calculator </h2>
+                <p>Full-stack scientific calculator with expression evaluation, real-time graphing, and step-by-step visualization.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">JavaFX</span>
+                    <span class="tech-tag">Algorithms</span>
+                    <span class="tech-tag">Maven</span>
+                    <span class="tech-tag">OOP</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/Amsishere/scientific-calculator" 
+                       class="btn btn-primary" target="_blank">View Code</a>
+                </div>
+            </div>
+
+            <!-- Project 2: Cache Optimizer -->
+            <div class="project-card">
+                <h2 class="project-title"> Adaptive Cache System</h2>
+                <p>Cache optimization framework implementing multiple self-organizing list algorithms.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">Multithreading</span>
+                    <span class="tech-tag">Design Patterns</span>
+                    <span class="tech-tag">Benchmarking</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/Amsishere/adaptive-cache-system" 
+                       class="btn btn-primary" target="_blank">View Code</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul class="skill-list">
+                        <li>✅ Java </li>
+                        <li>✅ Python</li>
+                        <li>✅ JavaScript/HTML/CSS</li>
+                        <li>✅ C/C++</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>✅ Git & GitHub</li>
+                        <li>✅ Maven/Gradle</li>
+                        <li>✅ Docker</li>
+                        <li>✅ Linux/Unix</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>CS Fundamentals</h3>
+                    <ul class="skill-list">
+                        <li>✅ Data Structures</li>
+                        <li>✅ Algorithms</li>
+                        <li>✅ OOP & Design Patterns</li>
+                        <li>✅ Software Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Amanda Xhafaj. All rights reserved.</p>
+        <p>📍 Denizli | 🎓 Pamukkale University</p>
+        <p>Hosted for free on GitHub Pages</p>
+    </footer>
+
+    <script>
+        // Simple animation for project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 15px 30px rgba(0,0,0,0.2)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            });
+        });
+        
+        // Update year in footer
+        document.querySelector('footer p').innerHTML = 
+            `© ${new Date().getFullYear()} Amanda Xhafaj. All rights reserved.`;
+    </script>
+</body>
+</html>
